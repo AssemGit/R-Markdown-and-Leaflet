@@ -20,10 +20,9 @@ Your webpage must contain the date that you created the document, and it must co
 
 ```{r}
 library(leaflet)
-```
 
-```{r}
-m_map <- leaflet() %>% addTiles()   
-m_map <- m_map %>% addMarkers(lat= 40.4395932, lng= -79.9893378, popup="Piitsburgh Penguins play here")
-m_map  
+my_map <- leaflet() %>%
+  addTiles() %>%  
+  addMarkers(lng=7.68465, lat=45.0432, popup="Salsa Rossa - Really good pizza in Turin")
+my_map  
 ```
